@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container::before{
+            content: "";
+            background-image: url("https://source.unsplash.com/featured/1600x900");
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.4;
+
+
+        }
+
+        
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            margin: 2px 13px;
+            /* border: 2px solid red; */
+            background-color: rgba(0, 255, 255, 0.342);
+            
+            /*for inside box shadow : offset-x offset-y blur-radius spread-color and color*/
+            box-shadow: inset 10px 5px 5px rgba(87, 182, 229, 0.589);          
+            
+            
+            /*for outside box shadow : offset-x offset-y blur-radius spread-color and color*/
+            box-shadow: 10px 10px 5px 5px rgba(87, 182, 229, 0.589); 
+        }
+
+        .card h2{
+            text-shadow: 1px 1px 10px black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1"><h2>card1</h2>
+            <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi dolor sunt, harum expedita eos esse, non laudantium nobis maxime necessitatibus veniam iste accusamus. Autem natus nihil accusantium corrupti est culpa assumenda soluta dolorum incidunt.
+        </p></div>
+        <div class="card" id="card2"><h2>card2</h2>
+            <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi dolor sunt, harum expedita eos esse, non laudantium nobis maxime necessitatibus veniam iste accusamus. Autem natus nihil accusantium corrupti est culpa assumenda soluta dolorum incidunt.
+        </p></div>
+        <div class="card" id="card3"><h2>card3</h2>
+            <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi dolor sunt, harum expedita eos esse, non laudantium nobis maxime necessitatibus veniam iste accusamus. Autem natus nihil accusantium corrupti est culpa assumenda soluta dolorum incidunt.
+        </p></div>
+        <div class="card" id="card4"><h2>card4</h2>
+            <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi dolor sunt, harum expedita eos esse, non laudantium nobis maxime necessitatibus veniam iste accusamus. Autem natus nihil accusantium corrupti est culpa assumenda soluta dolorum incidunt.
+        </p></div>
+    </div>
+    
+</body>
+</html>

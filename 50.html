@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope , and conditinals and switch</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <!-- div>ul>li{Items-$}*7          is the short for this  -->
+    <div>
+        <ul>
+            <li style=" list-style: none;">Items-1</li>
+            <li style=" list-style: none;">Items-2</li>
+            <li style=" list-style: none;">Items-3</li>
+            <li style=" list-style: none;">Items-4</li>
+            <li style=" list-style: none;">Items-5</li>
+            <li style=" list-style: none;">Items-6</li>
+            <li style=" list-style: none;">Items-7</li>
+        </ul>
+    </div>
+
+    
+    <script>
+
+        // var is a gloable variable and let is a block variable and we are in the state to be use the "let " is more prefered
+
+
+
+        var str = "This is a string"
+        var str = "This is a string2"
+
+        let a = "u";
+        {
+            let a = "u6";
+            console.log(a)
+            
+        }
+        console.log(a)
+        console.log(str)
+
+
+        // constant  that cannot be changed
+
+        const s ="This value cam't be changed"
+        // s ="I want to change this. This value cam't be changed"
+        console.log(s)
+
+
+
+        // Conditionals
+
+        let age = 17;
+        if(age>18){
+            console.log("You can drink cold drink");
+        }
+        else if(age == 17){
+            console.log("You are not allowed")
+        }
+        
+        else{
+            console.log("You can drink water")
+        }
+
+
+
+
+        // Switch
+
+        const cups =42;
+
+        switch (cups) {
+            case 4:
+                console.log("The value of cups is 4")
+                break;
+        
+            case 41:
+                console.log("The value of cups is 41")
+                break;
+        
+            case 43:
+                console.log("The value of cups is 43")
+                break;
+        
+            case 44:
+                console.log("The value of cups is 44")
+                break;
+                
+                default:
+                console.log("The value of cups is none of 4, 41, 43, 44")
+                break;
+        }
+
+
+
+    </script>
+</body>
+</html>

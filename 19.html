@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, Width, Borders and Backgrounds</title>
+    <style>
+        #fisPara{
+            background-color: red;
+            height: 20px;
+            width: 125px;
+            border: 2px solid green;           
+            /* border-width: 2px;               
+            border-color: green ;
+            border-style: solid; */
+            border-radius: 5px;
+        }
+
+        
+        #secPara{
+            background-color:green;
+            height: 20px;
+            width: 200px;
+            border-top: 2px solid yellow;
+            border-bottom: 2px solid yellow;
+            border-left: 2px solid yellow;
+            border-right: 2px solid yellow;
+            border-top-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+
+        #thiPara{
+            height: 30px;
+            width: 200px;
+            background-image: url(https://lh3.googleusercontent.com/ogw/AGvuzYZJDasFxSq_yMrtX7VunXlXnaTCqwEPtJT-i0gB=s32-c-mo);
+            border: 2px solid red;
+            background-repeat: no-repeat;  /*repeat-x and repeat-y will make it repeat in x and y*/
+            background-position: center;  /*It will help in positioning the image*/
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h3>This is Heading</h3>
+    <p id="fisPara">This is a paragraph</p>
+
+    <h3>This is second Heading</h3>
+    <p id="secPara">This is a second paragraph</p>
+
+    <h3>This is third Heading</h3>
+    <p id="thiPara">This is a third paragraph</p>
+    
+</body>
+</html>

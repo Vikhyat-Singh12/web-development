@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animations</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: green;
+
+        }
+
+        .box {
+            background-color: aquamarine;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            animation-name: vikhyat;
+            animation-duration: 8s;
+            animation-iteration-count: 1;
+            
+            /* Stop at end results */
+            /* animation-fill-mode: forwards; */
+
+            /* stop at start result */
+            animation-fill-mode: alternate;
+
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-direction:normal ;
+
+            /* animation short hand is animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+            animation: vikhyat1 8s ease-in 2s 0 normal alternate;
+
+        }
+        @keyframes vikhyat1{
+            0%{
+                top:0px;
+                left:0px
+            }
+            25%{
+                top:200px;
+                left:0px
+            }
+            50%{
+                top:200px;
+                left:200px
+            }
+            75%{
+                top:0px;
+                left:200px
+            }
+            100%{
+                top:0px;
+                left:0px
+            }
+        }
+
+        @keyframes vikhyat {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+
+</body>
+
+</html>

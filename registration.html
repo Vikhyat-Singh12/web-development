@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Registration Form</title>
+    <script> function validateForm() {
+            var name = document.forms["registration"]["name"].value;
+            var application_number =
+                document.forms["registration"]["application_number"].value;
+            var gender = document.forms["registration"]["gender"].value;
+            var mobile_number =
+                document.forms["registration"]["mobile_number"].value;
+            var email_id = document.forms["registration"]["email_id"].value;
+            var address = document.forms["registration"]["address"].value;
+            if (name == "") {
+                alert("Name must be filled out");
+                return false;
+            } if (
+                application_number == "") {
+                alert("Application number must be filled out");
+                return false;
+            } if (
+                gender == "") {
+                alert("Gender must be selected");
+                return false;
+            } if (
+                mobile_number == "") {
+                alert("Mobile number must be filled out");
+                return false;
+            } if (
+                email_id == "") {
+                alert("Email ID must be filled out");
+                return false;
+            } if (
+                address == "") {
+                alert("Address must be filled out");
+                return false;
+            }
+            if (!email_id.match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/)) {
+                alert("Invalid email address");
+                return false;
+            } if (!mobile_number.match(/^\d{10}$/)) {
+                alert("Invalid mobile number");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <h1>Student Registration Form</h1>
+        <hr>
+        <form name="registration" onsubmit="return validateForm()">
+            <pre>
+Name:              <input type="text" name="name">
+Application Number:<input type="text" name="application_number">
+Gender:            <input type="radio" name="gender" value="male">Male<input type="radio"
+name="gender" value="female">Female<input type="radio" name="gender"
+value="other">Other
+Mobile Number:     <input type="text" name="mobile_number">
+Email ID:          <input type="text" name="email_id">
+Address:           <input type="text" name="address">
+<input type="submit" value="Submit">
+</pre>
+        </form>
+    </center>
+</body>
+
+</html>

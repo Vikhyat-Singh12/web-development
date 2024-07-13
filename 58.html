@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript SetTimeOut & ClearTimeOut</title>
+</head>
+<body>
+    <div class="container">
+        Time Now : <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is tutorial 58")
+
+        // setTimeout --> Allows us to run a function once after the interval of time
+        // clearTimeout --> Allows us to run a function repeatedly after the interval of time
+
+        function greet(name, byeText){
+            console.log("Good Night " + name +" " +byeText)
+        }
+        greet()
+
+        // setTimeout(greet, 5000 ,  "Vikhyat" , "Take care");
+
+        // setTimeout(greet(), 5000 ,  "Vikhyat" , "Take care");   --> Wrong as it calling the function inside the setTimeout 
+
+        //setTimeout return the the time out id which is used in clear clearTimeout(x) to remove setTimeout function
+        timeOut = setTimeout(greet, 5000 ,  "Vikhyat" , "Take care")  
+        console.log(timeOut)
+        clearTimeout(timeOut)
+
+        // setInterval(greet, 1000, "Vikhyat" , "Take Care");   --> Comment out sice it is a infinite loop
+
+
+        //setInterval return the the inteval out id which is used in clear clearInterval(x) to remove setInterval function
+        intervalId = setInterval(greet, 1000, "Vikhyat" , "Take Care");
+        clearInterval(intervalId)
+
+
+        function displayTime(){
+            time = new Date();
+            // console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+
+        setInterval(displayTime, 1000)
+
+
+    </script>
+    
+</body>
+</html>

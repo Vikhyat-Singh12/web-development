@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors & more designing</title>
+    <style>
+        .container{
+            border: 3px solid rgb(240, 115, 115);
+            background-color: rgba(159, 235, 241, 0.42);
+            padding:34px;
+            margin: 34px auto ;
+            width: 600px;
+            
+        }
+        .btn{
+            background: palegreen;
+            /* border: none;        this is used to remove boder  */
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        a{
+            text-decoration:none  it is used to decorate text
+        
+        }
+
+        a:hover{
+            color: red;       /*it is used for ultra decoration*/
+        }
+
+        /* a:visited{
+            color: hotpink;
+        } */
+        a:active{
+            background-color: rgba(132, 103, 230, 0.795);
+            border: 2px solid black;
+
+        }
+        .btn:hover{
+            color: red;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3 id="head">This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, aut repellat. Porro, illum aliquam nostrum nesciunt facilis nulla, voluptatum doloribus quam pariatur, est ut nihil architecto exercitationem cum vel quae perspiciatis inventore qui ad.</p>
+        <a href="21.html" target="_blank">Read More</a>
+        <button class="btn">Contact us</button>
+        
+    </div>
+    
+</body>
+</html>

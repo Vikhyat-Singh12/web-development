@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is about loop</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quasi pariatur provident, sapiente distinctio
+        rem ex ipsa voluptates facilis, id ipsum sint velit necessitatibus debitis. Aspernatur quidem libero, eligendi
+        id tempora earum magnam molestias!</p>
+    <script>
+        console.log("This is Tutorial 55");
+        let i = 0;
+        for (i = 0; i < 3; i++) {
+            console.log(i);
+        }
+
+
+        // old Method
+        let friends = ["Rohan", "Sanjeev", "Deepti", "Pooja ", "SkillF"];
+        for (let index = 0; index < friends.length; index++) {
+            console.log("Hello Friends, " + friends[index])
+        }
+
+
+        // Modern techanics
+        friends.forEach(function f(element) {
+            console.log("Hello friends  " + element + " to modern JavaScript")
+        });
+
+        // another techanique modern JavaScript
+        for (element of friends) {
+            console.log("Hello friends  " + element + " to another techanique modern JavaScript")
+
+        }
+
+        let employee = {
+            name: "Vikhyat",
+            salary: 10,
+            channel: "FFG"
+
+        }
+
+        for (key in employee) {
+            console.log(`the ${key} of employee is ${employee[key]} `)
+        }
+
+
+        // While loop in JavaScript
+        
+        let a =0;
+        while(a<4){
+            console.log(`${a} is less than 4`);
+            a++;
+        }
+
+        
+        // do While loop in JavaScript
+
+        let b = 34;
+        do{
+            console.log(`${b} is less than 4 but inside do while loop`);
+            b++;}
+            while(b<4);
+
+
+       
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid4</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            "navbar navbar navbar navbar"
+            "section section section aside";
+
+
+        }
+        .item{
+            border: 3px solid red;
+        }
+        #navbar{
+            grid-area: navbar;
+            padding: 0px 0px;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home  About  Contact Us
+        </div>
+        <div id="section" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolores dolorem tempora cupiditate. Quasi veniam ipsa accusamus beatae necessitatibus odio culpa qui itaque!</div>
+        <div id="aside" class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, aspernatur qui. Consequatur!
+
+        </div>
+        <!-- <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+        <div class="item">Item-7</div>
+        <div class="item">Item-8</div>
+        <div class="item">Item-9</div>
+        <div class="item">Item-10</div>
+        <div class="item">Item-11</div>
+        <div class="item">Item-12</div> -->
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid + Media Queries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                "navbar navbar navbar navbar"
+                "section section section aside"
+            ;
+        }
+
+        span {
+            padding: 10px;
+        }
+
+        body {
+            background-color: red;
+        }
+        .one{
+                display: inline;
+            }
+
+        @media (max-width:300px) {
+            body {
+                display: block;
+                background-color: aquamarine;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+
+        }
+
+        @media (min-width:300px) and (max-width:500px) {
+            body {
+                display: block;
+                background-color: aqua;
+            }
+            .one{
+                display: block;
+                text-align: center;
+            }
+           
+        }
+
+        @media (min-width:500px) and (max-width:700px) {
+            body {
+                display: block;
+                background-color: rgb(80, 248, 58);
+
+
+
+            }
+
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas:
+                    "navbar navbar navbar navbar"
+                    "section section section section"
+                    "aside aside aside aside"
+                ;
+            }
+            .one{
+                display: inline;
+            }
+        }
+
+        @media (min-width:700px) {
+            body {
+                display: block;
+
+            }
+        }
+
+        nav {
+            grid-area: navbar;
+            padding: 0px 0px;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+
+
+        .bdr {
+            border: 3px solid green;
+            padding: 23px;
+            background-color: wheat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <div class="one">
+                <span>Home</span>
+                <span>About</span>
+
+            </div>
+            <div class="one">
+                <span>Contact Us</span>
+                <span>About Us</span>
+
+            </div>
+
+        </nav>
+        <section class="bdr">
+            <h2>Learn CSS in Hindi</h2>
+        </section>
+        <aside class="bdr">
+            More About Us
+        </aside>
+    </div>
+
+</body>
+
+</html>

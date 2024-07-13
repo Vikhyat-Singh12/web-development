@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table and List with CSS</title>
+    <style>
+        .Custom-table{
+            border-collapse: collapse;
+            width: 50%;
+            margin-bottom: 20px;
+        }
+        .Custom-table th,.Custom-table td{
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .Custom-table th{
+            background-color: #f2f2f2;
+        }
+        .Custom-list{
+            list-style-type: none;
+            padding: 0px;
+        }
+        .Custom-list li{
+            margin-bottom: 5px;
+            padding: 8px;
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Table</h2>
+    <table class="Custom-table">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Emily</td>
+            <td>30</td>
+        </tr>
+    </table>
+    <ul class="Custom-list">
+        <li>Almond</li>
+        <li>Jalebi</li>
+        <li>Gulab Jamun</li>
+    </ul>
+</body>
+</html>

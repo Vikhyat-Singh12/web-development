@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dates in JavaScript</title>
+</head>
+<body>
+    <div class="container" id="con">
+        Container
+    </div>
+    <Script>
+        console.log("This is Date & Time tutorial")
+
+        // This is used to print current date and time
+        let now = new Date();
+        console.log(now)
+
+        // This is used to print date from start and the value given in Date is in Milli Second 
+        let dt = new Date(1690354842740000);
+        console.log(dt)
+
+        // This is used to print the required date
+        let newDate = new Date("2023-07-26")
+        console.log(newDate)
+        
+        // let newdate = new Date(year, month+1, hours, minutes, seconds, milliseconds);
+        let newdate = new Date(3020,4,6,9,3,2,10)
+        console.log(newdate)
+        document.getElementById("con").innerHTML = newdate
+
+
+
+        // Yo get the Year
+        let yr = newdate.getFullYear();
+        console.log("the year is ", yr)
+        
+        // Yo get the date
+        let dat = newdate.getDate();
+        console.log("the date is ", dat)
+        
+        // Yo get the month
+        let mo = newdate.getMonth();
+        console.log("the month is ", mo)
+        
+        // Yo get the hours
+        let getH = newdate.getHours();
+        console.log("the hours is ", getH)
+        
+        // Yo get the milisecond
+        let s = newdate.getSeconds();
+        console.log("the second is ", s)
+        
+        // Yo get the milisecond
+        let ms = newdate.getMilliseconds();
+        console.log("the milisecond is ", ms)
+
+        // To update the date
+        newdate.setDate(12)
+        console.log(newdate)
+
+
+
+
+    </Script>
+    
+</body>
+</html>

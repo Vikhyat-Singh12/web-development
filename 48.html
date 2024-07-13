@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript | Strings & String Methods</title>
+</head>
+<body>
+    <div class="container">
+        <div id="content"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia provident expedita at optio corporis magni doloremque atque nihil totam aut consequatur saepe aliquam eos eum corrupti nam, tempora illo enim ex unde. Cupiditate, officia!</p>
+    </div>
+    <script>
+        var string ="This is string"
+        var name = "Vikhyat"
+        var message = " Vikhyat is great"
+        var age = " Eighteen"
+        var temp = `${name} is a nice person of age ${age}.`;  // type of f'string
+        console.log(string + name + age)    //adding the strings
+        console.log(temp) 
+
+        var len = name.length;
+        console.log(`Length of name is ${len}`)
+        
+        console.log(`My name\\ \\n   is \n Vikhya \t Singh`)
+        document.getElementById('content').innerHTML = "This is H3 heading."
+
+
+    </script>
+    
+</body>
+</html>

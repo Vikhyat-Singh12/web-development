@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable/ Custom Properties</title>
+    <style>
+        :root{
+            /*The varible given in roots are golbal variable and used if local variabke not present*/
+            --primary: violet;
+            --boder: black;  
+            --maxh: 1000px;        
+        }
+        .box{
+            
+            --primary: red;              /*This is local variable*/     
+            width: 200px;
+            height: 200px;
+            background-color: var(--primary);
+            border: 2px solid var(--boder);
+            margin: 2px 3px;
+
+        }
+        .container{
+            max-width: var(--maxh);
+            background-color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript String Function</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <script>
+        var str = "This is String"
+        console.log(str)
+
+        // Gives the  first occurence of that word 
+        var position = str.indexOf('is')
+        console.log(position)
+
+        // Gives the  last occurence of that word 
+        var position = str.lastIndexOf('is')
+        console.log(position)
+
+
+
+        // Sub string from dtring
+        var substr = str.slice(2, 7)    //last word not taken
+        console.log(substr)
+
+        var substr = str.substring(2, 7)    //last word not taken and it also do not take negative values
+        console.log(substr)
+
+        var substr1 = str.substr(2, 7)    //First word is starting word and last word is ending word
+        console.log(substr1)
+        
+        console.log(str[2])                //This is used to get the single character of the string of that index
+
+        var replaced = str.replace('String', 'Vikhyat')
+
+        console.log(str)
+        console.log(replaced)
+
+        console.log(str.toUpperCase())
+        console.log(str.toLowerCase())
+
+        //  Concat is just like a '+' operator
+        var newString = str.concat(" New Str")
+        console.log(newString)
+
+
+        // This Trim will remove the extra spaces from the both ends
+        var whiteSpace = "       This is      WhiteSpace    "
+        console.log(whiteSpace)
+        console.log(whiteSpace.trim())
+
+
+        // This eill return the character at that index
+        var char2 = str.charAt(2)
+        console.log(char2)
+
+        
+        //  Not very Important
+        var char2 = str.charCodeAt(2)
+        console.log(char2)
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

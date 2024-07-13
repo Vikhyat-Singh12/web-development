@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        .navbar{
+            background-color: yellow;
+            border-radius: 12px;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float: left;                /*It can also be achieved by "Display:Inline-Block"*/
+            list-style: none;
+            margin: 8px 14px;
+        
+        }
+        .navbar li a{
+            padding: 3px;
+            text-decoration: none;
+        }
+        .navbar li a:hover{
+            background-color: red;
+        }
+        .search{
+            float: right;
+            color: aliceblue;
+            padding: 10px 25px;
+            
+        }
+        .navbar input{
+            border: 3px solid black;
+            border-radius: 8px;
+            padding: 5px 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="seachbox" placeholder="Search ">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    
+</body>
+</html>

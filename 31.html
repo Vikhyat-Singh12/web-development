@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <Style>
+        h1{
+            background-color: aqua;
+            text-align: center;
+        }
+
+        /* div li p {
+            font-weight: bold;
+            color: yellowgreen;
+            background-color: aquamarine;
+        } */
+
+        /* div > p /*this means p just after div{                  
+            font-weight: bold;
+            color: yellowgreen;
+            background-color: aquamarine;
+        } */
+
+        div + p /* This means div is just after p*/{
+            font-weight: bold;
+            color: yellowgreen;
+            background-color: aquamarine;
+
+        }
+
+
+    </Style>
+</head>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>Thiis is another paragraph inside ul</p></li>
+                <p>this is will not get afected</p>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is outer paragraph</p>
+
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selector</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mynerve&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+        }
+        
+        header::before{
+            content: "";
+            background-image: url("https://source.unsplash.com/featured/1600x900") ;
+            position :absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.4;
+
+
+        }
+
+        .navigation {
+            display: flex;
+            font-size: 20px;
+        }
+
+        li {
+            list-style: none;
+            padding: 10px;
+        }
+
+        section {
+            height: 344px;
+            margin: -7px 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* section::before {
+            font-weight: bold;
+            content: "This is before Content";
+        } */
+
+        /* section::after {
+            font-weight: bold;
+            content: "This is after Content";
+        } */
+
+        h1 {
+            font-family: 'VT323', monospace;
+            font-size: 3rem;
+        }
+
+        p {
+            text-align: center;
+            font-family: 'Mynerve', cursive;
+        }
+
+        hr {
+            margin-bottom: 45px;
+            margin-top: -25px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <section>
+        <h1>Welcome to coading world</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, minima. Quia enim hic nostrum, saepe
+            consequatur eos numquam asperiores, unde voluptatibus deleniti eum adipisci accusantium vel expedita
+            quod eius alias, officiis beatae eligendi tenetur.</p>
+    </section>
+    <hr>
+
+</body>
+
+</html>

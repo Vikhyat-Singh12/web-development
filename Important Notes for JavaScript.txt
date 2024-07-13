@@ -1,0 +1,8 @@
+                                           ## Important Notes for JavaScript
+
+
+#
+
+1. Script can be written or linked in Head or Body(at the end of Body tag).
+2. var and let are used to make variables but var are gooble variable and let are local variable.
+3. const are used to make a variable that their value can't be changed.

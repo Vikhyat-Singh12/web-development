@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ineration using  alert , confirm and prompt </title>
+</head>
+<body>
+    <div class="container">
+        this is a page
+    </div>
+
+    <script>
+        // Alert in in-brower JavaScript
+        alert("This is a message");
+
+        // Prompt in Js
+        let name = prompt("What is Your name?", "Guest");
+        console.log(name)
+
+        //  Confirm in Js
+        let deletePost = confirm("Do You really want to delete the Post?")
+
+        if (deletePost){
+            console.log("Your Post has been Sucessfully deleted")
+        }
+        else{
+            console.log("Your Post has not been  deleted")
+        }
+        console.log(deletePost)
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manupulating DOM</title>
+</head>
+<body>
+    <div class="container" id="main">
+        <ul id="nav">
+            <li>home</li>
+            <li>about</li>
+            <li>services</li>
+            <li>contact us</li>
+        </ul>
+    </div>
+    <div class="container">
+        Another container
+    </div>
+
+    <script>
+
+        // This will get the element by its id's. and retrn one element  since id is unique
+        let main = document.getElementById('main');      
+        console.log(main);
+        let nav = document.getElementById('nav');
+        console.log(nav);
+        
+        
+        // This will get the element by its class's. and retrn more than one element  since class is not unique
+        let container = document.getElementsByClassName('container')
+        console.log(container)
+
+        // It will return the first element of that class or id which is given.
+        let sel = document.querySelector('.container')
+        console.log(sel)
+       
+        // It will return the all element of that class or id which is given.
+        let sel1= document.querySelectorAll('#nav>li')
+        console.log(sel1)
+
+
+    </script>
+    
+</body>
+</html>
